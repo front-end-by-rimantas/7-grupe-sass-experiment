@@ -1,0 +1,54 @@
+$main-color: rgb(105, 250, 20);
+$light-grey-color: rgb(238, 238, 238);
+
+%sventa-marija {
+    display: inline-block;
+    float: left;
+}
+
+@mixin btnSize( $size ) {
+    font-size: 5px * $size;
+    line-height: 5px * $size;
+    padding: 2.5px * $size 5px * $size;
+    border-radius:  $size;
+}
+.btn {
+    @include btnSize( 4 );
+
+    display: inline-block;
+    border: 1px solid #CCC;
+    background-color: $main-color;
+    color: $light-grey-color;
+
+    &.btn-cancel {
+        background-color: #EEE;
+        color: #333;
+    }
+
+    &.btn-big {
+        @include btnSize( 6 );
+    }
+}
+
+header {
+    display: inline-block;
+    width: 100%;
+
+    > .logo {
+        @extend %sventa-marija;
+    }
+
+    > nav {
+        display: inline-block;
+        float: right;
+
+        > a {
+            @extend %sventa-marija;
+            padding: 5px 10px;
+
+            &:hover {
+                background-color: red;
+            }
+        }
+    }
+}

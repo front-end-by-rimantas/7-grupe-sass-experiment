@@ -1,0 +1,45 @@
+header > .logo, header > nav > a {
+  display: inline-block;
+  float: left;
+}
+
+.btn {
+  font-size: 20px;
+  line-height: 20px;
+  padding: 10px 20px;
+  border-radius: 4;
+  display: inline-block;
+  border: 1px solid #CCC;
+  background-color: #69fa14;
+  color: #eeeeee;
+}
+
+.btn.btn-cancel {
+  background-color: #EEE;
+  color: #333;
+}
+
+.btn.btn-big {
+  font-size: 30px;
+  line-height: 30px;
+  padding: 15px 30px;
+  border-radius: 6;
+}
+
+header {
+  display: inline-block;
+  width: 100%;
+}
+
+header > nav {
+  display: inline-block;
+  float: right;
+}
+
+header > nav > a {
+  padding: 5px 10px;
+}
+
+header > nav > a:hover {
+  background-color: red;
+}
